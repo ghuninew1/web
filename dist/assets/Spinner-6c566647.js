@@ -1,0 +1,1 @@
+import{j as r}from"./index-1c5f7ad0.js";function n({active:e=!0}){return r.jsx(r.Fragment,{children:r.jsx("div",{className:["spinner",e&&"spinner--active"].join(" "),role:"progressbar","aria-busy":e?"true":"false"})})}export{n as default};

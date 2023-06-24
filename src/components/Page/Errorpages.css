@@ -1,4 +1,4 @@
-.Contacts {
+.Errorpages {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -15,19 +15,19 @@
     text-align: center;
     list-style: none;
 }
-.Contacts h2{
+.Errorpages h2{
     margin: 20px;
     padding: 0px;
     max-width: 100%;
     font-size: 30px;
 }
-.Contacts-1 {
+.Errorpages-1 {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    max-width: 100%;
+    max-width: 1000px;
     max-height: 100%;
     width: 100%;
     height: 100%;
@@ -39,23 +39,7 @@
     align-content: center;
     text-align: center;
 }
-.Contacts-2 > iframe{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-    align-self: center;
-    justify-items: center;
-    align-content: center;
-    text-align: center;
-    z-index: 3;
-    margin: 0;
-    padding: 5px;
-}
-.Contacts-2 {
+.Errorpages-2 {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -72,7 +56,7 @@
     text-align: center;
 }
 
-.Contacts-3 {
+.Errorpages-3 {
     margin: 0;
     width: 100%;
     height: 100%;
@@ -83,11 +67,10 @@
     justify-items: center;
     align-content: center;
     text-align: center;
-    z-index: 3;
     margin: 0;
     padding: 0;
 }
-.Contacts-4 {
+.Errorpages-4 {
     margin: 0;
     width: 100%;
     height: 100%;
@@ -99,10 +82,10 @@
     align-content: center;
     text-align: center;
     margin: 0;
-    padding: 5px;
+    padding: 0;
 }
 @media only screen and (max-width: 630px) {
-    .Contacts-1 {
+    .Errorpages-1 {
         flex-direction: column;
     }
 

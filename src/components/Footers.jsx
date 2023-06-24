@@ -1,5 +1,6 @@
 import './Footers.css'
 import { Fdata } from './Footers-data';
+// import Scroller  from './Scroller';
 
 const listItems = Fdata.map(dataf =>
   <div key={dataf.id}>
@@ -14,6 +15,7 @@ const listItems = Fdata.map(dataf =>
 export default function Footers() {
   return (
     <>
+    {/* <Scroller asset={10}> */}
       <footer className="footer-main">
         <div className="footer">
           <div className="footer-1">
@@ -51,6 +53,7 @@ export default function Footers() {
           </div>
         </div>
       </footer>
+      {/* </Scroller> */}
     </>
   );
 }

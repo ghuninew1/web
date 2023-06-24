@@ -14,23 +14,20 @@ h1, h2, h3, h4, p {
 a {
   color: #f4efef;
 }
-.contents{
+.contents-bg{
   background-image: url("/img/bg-min.png");
-  background-size: auto;
+  background-size: 500px;
   background-repeat: no-repeat;
-  background-position:  85% 65%;
-  background-color: #000;
+  background-position:  80% 55%;
   margin: 0;
   padding: 0;
-  max-width: 100%;
   width: 100%;
-  height: 100%;
   text-align: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.85);
 }
 .bgb {
   margin: 0;
   padding: 0;
-  max-width: 100%;
   width: 100%;
   text-align: center;
 }
@@ -61,32 +58,6 @@ a {
   max-width: 100%;
   margin: 0;
   height: 100%;
-}
-
-.contant1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  justify-self: center;
-  justify-items: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  color: #fcfcfc;
-}
-.contant1 hr {
-  width: 100%;
-}
-.contant1>h2{
-margin-bottom: 1rem;
-font-size: 3rem;
-color: #bb0000;
-}
-.contant1>p {
-  margin: 0;
-  color: #ffffff;
-  font-size: 1rem;
 }
 
 .divm {
@@ -123,11 +94,11 @@ color: #bb0000;
   color: #161515;
   width: auto;
   height: auto;
-  background-color: rgb(156, 197, 34);
+  background-color: rgba(6, 180, 0, 0.191);
 }
 
 .divm button:hover {
-  color: #04ea49;
+  color: #f06000;
   background-color: transparent;
   filter: drop-shadow(0 0 5px #61dafbaa);
   scale: 110%;

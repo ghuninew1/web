@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 // eslint-disable-next-line react/prop-types
-export default function Scroller({children}) {
+export default function Scroller({children, asset}) {
 
   const [isVisible, setIsVisible] = useState(true);
   const [height, setHeight] = useState(0);
@@ -13,17 +13,17 @@ export default function Scroller({children}) {
   }, []);
 
   const listenToScroll = () => {
-    const heightToHideFrom =10;
+    const heightToHideFrom =asset;
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     setHeight(winScroll);
 
-    if (winScroll > heightToHideFrom) {
+    if (winScroll < heightToHideFrom) {
       isVisible && setIsVisible(false);
     } else {
       setIsVisible(true);
     }
   };
-
+  // console.log(isVisible,height);
   return (
     <div>
       <b>

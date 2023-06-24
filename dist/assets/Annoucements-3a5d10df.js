@@ -1,2 +1,0 @@
-import{j as s}from"./index-b249430c.js";function n(){return document.cookie="_Pg=Annoucement; SameSite=None; Secure",s.jsxs("div",{className:"Contacts",children:[s.jsx("h2",{children:"Annoucement"}),s.jsxs("div",{className:"Contacts-1",children:[s.jsx("div",{className:"Contacts-2"}),s.jsxs("div",{className:"Contacts-2",children:[s.jsx("div",{className:"Contacts-4",children:s.jsx("div",{className:"Contacts-3"})}),s.jsx("div",{className:"Contacts-4"})]})]})]})}export{n as default};
-//# sourceMappingURL=Annoucements-3a5d10df.js.map

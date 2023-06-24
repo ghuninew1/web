@@ -1,28 +1,33 @@
 @font-face {
-  font-family: font1;
+  font-family: "font1";
   src: url("./img/1.woff") format("woff");
 }
-@font-face {
-  font-family: font3;
-  src: url("./img/a6d731_b3b23dabd7104520ade9b4012f4bc97a.woff") format("woff");
+@font-face{
+  font-family:"Tahoma-W01-Regular";
+  src:url("./img/20323430-24f4-4767-9d4d-060d1e89758a.woff") format("woff");
+}
+@font-face{
+  font-family:"Tahoma-W15--Regular";
+  src: url("./img/ae844b11-5158-4caf-90b4-7ace49ac3440.woff") format("woff");
+}
+
+@font-face{
+  font-family:"Tahoma-W99-Regular";
+  src:url("./img/d3bbaa1b-d5e3-431f-93a7-9cea63601bb6.woff") format("woff");
 }
 @font-face {
-  font-family: font2;
-  src: url("./img/2.woff") format("woff");
-}
-@font-face {
-  font-family: font4;
-  src: url("./img/a6d731_be909846e1ba42ba84896732a56a162d.woff") format("woff");
+  font-family: "Tahoma-W10-Regular";
+  src: url("./img/9ee00678-b6d7-4b4f-8448-70cfa267d36b.woff") format("woff");
 }
 * {
-  font-family: "font1", sans-serif;
+  font-family: "font1";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  font-family: "font1", sans-serif;
+  font-family: "font1";
 
 }
 

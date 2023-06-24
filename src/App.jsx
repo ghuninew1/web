@@ -1,7 +1,6 @@
 import {  Suspense, lazy } from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { CountProvider } from './CountProvider'
 
 const Html = lazy(() => import('./components/Html'));
 const Spinner = lazy(() => import('./components/Spinner'));
@@ -18,6 +17,7 @@ const Services = lazy(() => import('./components/Page/Services'));
 const Jobss = lazy(() => import('./components/Page/Jobss'));
 const Studios = lazy(() => import('./components/Page/Studios'));
 const Errorpages = lazy(() => import('./components/Page/Errorpages'));
+const Timer = lazy(() => import('./components/Timer'));
 
 const Home = () => (<><Homes /><Partner /></>);
 const Studio = () => (<><Studios /><ChangePageTitle pageTitle="Studio&#8471; Big Brain Studio&#8471;" /></>);
@@ -28,17 +28,25 @@ const Annoucement = () => (<><Annoucements /><ChangePageTitle pageTitle="Annouce
 const Contact = () => (<><Contacts /><ChangePageTitle pageTitle="Contact&#8471; Big Brain Studio&#8471;" /></>);
 const Errorpage = () => (<><Errorpages /><ChangePageTitle pageTitle="Error&#8471; Big Brain Studio&#8471;" /></>);
 
-export function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Suspense fallback={<Spinner />}>
         <Html title="GhuniNew">
+        <Timer timers={100}>
           <Logo />
-          <NavBar />
-            <Suspense fallback={<Spinner />}>
+          </Timer>
+          <Timer timers={4000}>
+            <NavBar />
+          </Timer>
+          <Suspense fallback={<Spinner />}>
+            <Timer timers={5000}>
               <Contents />
-            </Suspense>
-          <Footers />
+            </Timer>
+          </Suspense>
+          <Timer timers={6000}>
+            <Footers />
+          </Timer>
         </Html>
       </Suspense>
     </BrowserRouter>
@@ -47,7 +55,7 @@ export function App() {
 
 function Contents() {
   return (
-    <div className="contents">
+    <div className="contents-bg">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/studio" element={<Studio />} />
@@ -61,12 +69,3 @@ function Contents() {
     </div>
   );
 }
-
-function AppWithProviders() {
-  return (
-    <CountProvider>
-      <App />
-    </CountProvider>
-  )
-}
-export default AppWithProviders

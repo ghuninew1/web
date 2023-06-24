@@ -1,19 +1,9 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react({
-      // eslint-disable-next-line no-undef
-      jsxRuntime: process.env.USE_CLASSIC === '1' ? 'classic' : 'automatic',
-    }),
-  ],
+  plugins: [react()],
   build: {
-    sourcemap: true,
     minify: true,
-  },
-  esbuild: {
-    jsxInject: `import React from 'react'`,
   },
 })

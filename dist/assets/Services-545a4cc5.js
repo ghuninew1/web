@@ -1,2 +1,0 @@
-import{j as s}from"./index-b249430c.js";function c(){return document.cookie="_Pg=Service; SameSite=None; Secure",s.jsxs("div",{className:"Contacts",children:[s.jsx("h2",{children:"Service"}),s.jsxs("div",{className:"Contacts-1",children:[s.jsx("div",{className:"Contacts-2"}),s.jsxs("div",{className:"Contacts-2",children:[s.jsx("div",{className:"Contacts-4",children:s.jsx("div",{className:"Contacts-3"})}),s.jsx("div",{className:"Contacts-4"})]})]})]})}export{c as default};
-//# sourceMappingURL=Services-545a4cc5.js.map
