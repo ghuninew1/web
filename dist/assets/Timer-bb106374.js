@@ -1,1 +1,0 @@
-import{r,j as e}from"./index-1c5f7ad0.js";function i({children:s,timers:t}){const[o,a]=r.useState(!1);return r.useEffect(()=>{const n=setTimeout(()=>{a(!0)},t);return()=>clearTimeout(n)},[t]),e.jsx("div",{children:o&&e.jsx(e.Fragment,{children:s})})}export{i as default};
